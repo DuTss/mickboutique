@@ -1,2 +1,3 @@
 # mickboutique
- 
+Procédure : 
+1. CREER LA BASE DE DONNEE AVEC LA BASE DE DONNEE SQL
