@@ -1,0 +1,9 @@
+"filename", "language", "JavaScript", "Markdown", "SQL", "JSON", "comment", "blank", "total"
+"/home/arinfo/Documents/GitHub/mickboutique/README.md", "Markdown", 0, 3, 0, 0, 0, 0, 3
+"/home/arinfo/Documents/GitHub/mickboutique/app.js", "JavaScript", 9, 0, 0, 0, 3, 4, 16
+"/home/arinfo/Documents/GitHub/mickboutique/controllers/articlesController.js", "JavaScript", 0, 0, 0, 0, 0, 1, 1
+"/home/arinfo/Documents/GitHub/mickboutique/data.sql", "SQL", 0, 0, 21, 0, 8, 6, 35
+"/home/arinfo/Documents/GitHub/mickboutique/package-lock.json", "JSON", 0, 0, 0, 482, 0, 1, 483
+"/home/arinfo/Documents/GitHub/mickboutique/package.json", "JSON", 0, 0, 0, 15, 0, 1, 16
+"/home/arinfo/Documents/GitHub/mickboutique/routes/articlesRoute.js", "JavaScript", 0, 0, 0, 0, 0, 1, 1
+"Total", "-", 9, 3, 21, 497, 11, 14, 555
