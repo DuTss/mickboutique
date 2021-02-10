@@ -1,0 +1,16 @@
+<%- include('partials/header.ejs') %>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1><%= article.titre %></h1> 
+      <div class="card" style="width: 18rem;">
+        <img src="<%= article.image %>" class="neige_bretagne">
+        <div class="card-body">
+          <p class="card-text"><%= article.description %></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<%- include('partials/footer.ejs') %>
