@@ -1,0 +1,17 @@
+<%- include('partials/header.ejs') %>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>LES AUTEURS</h1>
+      <% auteurs.forEach(function(auteur) {%>      
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"><%= auteur.nom %></h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+      <%});%>
+    </div>
+  </div>
+</div>
+<%- include('partials/footer.ejs') %>

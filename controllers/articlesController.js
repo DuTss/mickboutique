@@ -13,3 +13,5 @@ exports.getSingleArticlePage = async (req,res) => {
     res.render('articleSingle', {article: articleSingle[0]})
 }
 
+
+
