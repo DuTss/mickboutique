@@ -9,9 +9,9 @@
         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
     </div>
-    <h1>Liste des articles</h1>
-     <!-- DataTales Example -->
-     <div class="card shadow mb-4">
+    <h1>Liste des <%= total %> articles</h1>
+    <!-- DataTables Example -->
+    <div class="card shadow mb-4">
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
         </div>
@@ -29,31 +29,23 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td><button type="button" class="btn btn-primary">Modifier</button></td>
-                            <td><button type="button" class="btn btn-danger">Supprimer</button></td>
-                        </tr>
-                       
+                        <% articles.forEach(function(variableLocale) {%>      
+                            <tr>
+                                <td><%= variableLocale.titre %></td>
+                                <td><img class="img-thumbnail" src="<%= variableLocale.image %>"></td>
+                                <td><%= variableLocale.nom %></td>
+                                <td><%= variableLocale.description %></td>
+                                <td><button type="button" class="btn btn-primary">Modifier</button></td>
+                                <td><button type="button" class="btn btn-danger">Supprimer</button></td>
+                            </tr>
+                        <%});%>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-
 </div>
 <!-- /.container-fluid -->
-
-</div>
-<!-- End of Main Content -->
-
-
-</div>
-<!-- /.container-fluid -->
-
 </div>
 <!-- End of Main Content -->
 <%- include('partials-admin/footer-admin.ejs') %>
