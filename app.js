@@ -40,10 +40,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 // ROUTES
 const articles = require('./routes/articlesRoute')
 const auteurs = require('./routes/auteursRoute')
+const tableauDeBord = require('./routes/tableauDeBordRoute')
 
 // CONTROLLER
 app.use('/liste-des-articles', articles)
 app.use('/liste-des-auteurs', auteurs)
+app.use('/tableau-de-bord', tableauDeBord)
 
 app.get('/', function (req, res) {
     res.send('Bonjour')
