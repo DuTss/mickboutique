@@ -11,7 +11,7 @@
     </div>
     <h1>Ajouter un article</h1>
     <!------ FORMULAIRE POUR AJOUTER UN ARTICLE ------>
-    <form action="tableau-de-bord/liste-des-articles/ajouter" method="POST">
+    <form action="/tableau-de-bord/liste-des-articles/ajouter" method="POST">
         <!-- TITRE -->
         <div class="mb-3">
           <label class="form-label">Titre de l'article</label>
@@ -24,7 +24,7 @@
         </div>
         <!-- AUTEUR -->
         <div class="mb-3">
-            <select class="form-select" aria-label="Default select example">
+            <select class="form-select" aria-label="Default select example" name="auteurId">
                 <option selected>Choisis un auteur</option>
                 <% auteurs.forEach(function(auteur) {%>  
                 <option value="<%= auteur.auteurId %>"><%= auteur.nom %></option>
