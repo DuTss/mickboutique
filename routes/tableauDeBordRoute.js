@@ -5,7 +5,15 @@ const articlesAdminController = require('../controllers/admin/articlesAdminContr
 // PAGE TABLEAU DE BORD
 router.get('/', tableauDeBordController.getTableauDeBordPage)
 
-// LISTE DES ARTICLES
+//--------------------------------------------- Pages des articles ------------------------------------------------------
+// AFFICHE DES ARTICLES
 router.get('/liste-des-articles', articlesAdminController.getArticlesAdmin)
+
+// AFFICHE LE FORMULAIRE D'UN ARTICLE
+router.get('/liste-des-articles/ajouter', articlesAdminController.getAddArticleAdmin)
+
+// AJOUTER UN ARTICLE
+router.post('/liste-des-articles/ajouter', articlesAdminController.postAddArticleAdmin)
+
 
 module.exports = router

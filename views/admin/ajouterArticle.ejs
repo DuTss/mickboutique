@@ -1,0 +1,39 @@
+<%- include('partials-admin/header-admin.ejs') %>
+<%- include('partials-admin/sidebar-admin.ejs') %>
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+    </div>
+    <h1>Ajouter un article</h1>
+    <!------ FORMULAIRE POUR AJOUTER UN ARTICLE ------>
+    <form action="tableau-de-bord/liste-des-articles/ajouter" method="POST">
+        <!-- TITRE -->
+        <div class="mb-3">
+          <label class="form-label">Titre de l'article</label>
+          <input class="form-control" name="titre">
+        </div>
+        <!-- DESCRIPTION -->
+        <div class="mb-3">
+            <label class="form-label">Description</label>
+            <input class="form-control" name="description">
+        </div>
+        <!-- AUTEUR -->
+        <div class="mb-3">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Choisis un auteur</option>
+                <option value="1">Vlad</option>
+                <option value="2">Karl</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyé</button>
+    </form>
+</div>
+<!-- /.container-fluid -->
+</div>
+<!-- End of Main Content -->
+<%- include('partials-admin/footer-admin.ejs') %>
