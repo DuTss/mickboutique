@@ -35,7 +35,7 @@
                                 <td><img class="img-thumbnail" src="<%= variableLocale.image %>"></td>
                                 <td><%= variableLocale.nom %></td>
                                 <td><%= variableLocale.description %></td>
-                                <td><button type="button" class="btn btn-primary">Modifier</button></td>
+                                <td><a href="/tableau-de-bord/liste-des-articles/edit/<%= variableLocale.articleId %>"><button type="button" class="btn btn-primary">Modifier</button></a></td>
                                 <td><button type="button" class="btn btn-danger">Supprimer</button></td>
                             </tr>
                         <%});%>

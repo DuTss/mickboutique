@@ -15,5 +15,11 @@ router.get('/liste-des-articles/ajouter', articlesAdminController.getAddArticleA
 // AJOUTER UN ARTICLE
 router.post('/liste-des-articles/ajouter', articlesAdminController.postAddArticleAdmin)
 
+// AFFICHE PAGE EDITER
+router.get('/liste-des-articles/edit/:id', articlesAdminController.getEditArticleAdmin)
+
+// EDITER UN ARTICLE
+router.put('/liste-des-articles/edit/:id', articlesAdminController.putEditArticleAdmin)
+
 
 module.exports = router

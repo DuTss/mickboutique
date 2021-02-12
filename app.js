@@ -3,6 +3,7 @@ const path = require('path');
 const app = express();
 const mysql = require('mysql');
 const util = require('util');
+const methodOverride = require('method-override');
 
 // DotEnv
 require('dotenv').config()
@@ -22,6 +23,8 @@ db.connect(
   }
 )
 
+// METHODE OVERRIDE
+app.use(methodOverride('_method'))
 
 
 // DECLARE LA VARIABLE GLOBALE QUERY SQL
